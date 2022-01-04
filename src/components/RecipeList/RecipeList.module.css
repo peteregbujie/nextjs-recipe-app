@@ -1,0 +1,16 @@
+.wrapper {
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 16px;
+ padding-right: 16px;
+}
+
+.row {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.card {
+ margin: 0.5%;
+ padding: 0.5%;
+}
