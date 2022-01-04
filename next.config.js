@@ -1,8 +1,5 @@
 module.exports = {
- env: {
-  API_KEY: 9973533,
- },
- images: {
+  images: {
   domains: ['themealdb.com'],
  },
 };
