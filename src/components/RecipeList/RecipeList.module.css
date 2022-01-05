@@ -1,16 +1,78 @@
-.wrapper {
- margin-left: auto;
- margin-right: auto;
- padding-left: 16px;
- padding-right: 16px;
-}
-
 .row {
  display: flex;
  flex-wrap: wrap;
 }
 
 .card {
- margin: 0.5%;
- padding: 0.5%;
+ margin-bottom: 1.5rem;
+ margin-right: 1rem;
+ background-color: var(--white);
+ padding: 8px;
+ border-radius: 12px;
+ border: 1px solid var(--grey);
+ flex: 1 16%;
+}
+
+.img {
+ border-radius: 12px;
+ max-width: 100%;
+}
+
+.card__details {
+ padding: 16px 8px 8px 8px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.tag {
+ padding: 4px 8px;
+ border: 1px solid var(--background-color-secondary);
+ border-radius: 50px;
+ font-size: 12px;
+ font-weight: 600;
+ color: var(--color-secondary);
+ margin-right: 10px;
+}
+
+.name {
+ font-size: 1.2rem;
+ font-weight: 600;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.button {
+ border: none;
+ padding: 12px 24px;
+ border-radius: 50px;
+ font-weight: 600;
+ color: var(--color-secondary);
+ background-color: var(--background-color-secondary);
+ margin: 0 auto;
+ display: block;
+ transition: all 200ms ease-in-out;
+ cursor: pointer;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
+
+.button:focus,
+.button:hover {
+ background-color: var(--color);
+ color: var(--white);
+}
+
+.rows .card:first-child,
+.rows .card:nth-child(2) {
+ flex: 2 46%;
+}
+
+@media (max-width: 600px) {
+ .card {
+  flex: 1 46%;
+ }
 }

@@ -1,5 +1,6 @@
 module.exports = {
-  images: {
-  domains: ['themealdb.com'],
+ reactStrictMode: true,
+ images: {
+  domains: ['www.themealdb.com'],
  },
 };
