@@ -10,6 +10,7 @@
  --white: #ffffff;
 
  --font-family: 'Fira Sans', sans-serif;
+ --max-width: 1120px;
 }
 
 html,
@@ -30,4 +31,10 @@ a {
  box-sizing: border-box;
  color: inherit;
  font: inherit;
+}
+
+p {
+ margin-top: 0;
+ margin-bottom: 1.5rem;
+ max-width: 40em;
 }

@@ -9,13 +9,17 @@ function Navbar(title = "Recipe Finder") {
  const [isOpen, setisOpen] = useState(false);
  const openMenu = () => setisOpen(!isOpen);
  return (
-  <div>
+     <div className={styles.head}>
    <nav className={styles.navbar}>
     <Head>
      <title>{title}</title>
      <link rel='icon' href='/favicon.ico'></link>
     </Head>
-    <header></header>
+    <header>
+     <a href='#' className={styles.navbar__logo}>
+      RecipeFinder
+     </a>
+    </header>
     <ul className={isOpen ? styles.navbar__menu.active : styles.navbar__menu}>
      <li className={styles.navbar__item}>
       <Link href='/'>
@@ -30,11 +34,6 @@ function Navbar(title = "Recipe Finder") {
      <li className={styles.navbar__item}>
       <Link href='/'>
        <a>Recipes</a>
-      </Link>
-     </li>
-     <li className={styles.navbar__item}>
-      <Link href='/'>
-       <a>WishList</a>
       </Link>
      </li>
     </ul>
