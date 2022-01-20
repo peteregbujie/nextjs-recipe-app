@@ -1,5 +1,10 @@
 <img src='/public/screenshot.png'/>
+<br>
+<br>
+<br>
 
-#FEATURES
-Fetch Recipes
-Search for Recipes
+#FEATURES <br>
+
+Fetch Recipes <br>
+
+Search for Recipes <br>
