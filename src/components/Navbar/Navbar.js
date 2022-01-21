@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './Navbar.module.css';
 
 
-function Navbar(title = "Recipe Finder") {
+const Navbar =({title = "Recipe Finder"})=> {
  const [isOpen, setisOpen] = useState(false);
  const openMenu = () => setisOpen(!isOpen);
  return (

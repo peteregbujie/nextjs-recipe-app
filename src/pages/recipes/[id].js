@@ -1,4 +1,5 @@
 
+import Image from 'next/image';
 import Layout from '../../components/Layout/Layout';
 import { fetchMeal, fetchMeals } from '../../lib/requests';
 import styles from './Recipe.module.css';
@@ -10,6 +11,13 @@ function Recipe ({ recipe }) {
      <Layout>
       <div className={styles.recipe}>
        <section className={styles.recipe__hero}>
+        <Image
+         src={recipe.strMealThumb}
+         alt={recipe.strMeal}
+         className={styles.recipe__hero__img}
+         width='300px'
+         height='300px'
+        />
         <article className={styles.recipe__info}>
          <h2>{recipe.strMeal}</h2>
          <p>{recipe.strInstructions}</p>
@@ -32,9 +40,14 @@ function Recipe ({ recipe }) {
           <p className={styles.recipe__ingredient}>{recipe.strIngredient4}</p>
           <p className={styles.recipe__ingredient}>{recipe.strIngredient5}</p>
           <p className={styles.recipe__ingredient}>{recipe.strIngredient6}</p>
-          <p className={styles.recipe__ingredient}>{recipe.strIngredient7}</p>
+          {recipe.strIngredient7 !== '' && (
+           <p className={styles.recipe__ingredient}>{recipe.strIngredient7}</p>
+          )}
           {recipe.strIngredient8 !== '' && (
            <p className={styles.recipe__ingredient}>{recipe.strIngredient8}</p>
+          )}
+          {recipe.strIngredient9 !== '' && (
+           <p className={styles.recipe__ingredient}>{recipe.strIngredient9}</p>
           )}
          </div>
         </article>
@@ -47,9 +60,14 @@ function Recipe ({ recipe }) {
           <p className={styles.recipe__ingredient}>{recipe.strMeasure4}</p>
           <p className={styles.recipe__ingredient}>{recipe.strMeasure5}</p>
           <p className={styles.recipe__ingredient}>{recipe.strMeasure6}</p>
-          <p className={styles.recipe__ingredient}>{recipe.strMeasure7}</p>
+          {recipe.strMeasure7 !== '' && (
+           <p className={styles.recipe__ingredient}>{recipe.strMeasure7}</p>
+          )}
           {recipe.strMeasure8 !== '' && (
            <p className={styles.recipe__ingredient}>{recipe.strMeasure8}</p>
+          )}
+          {recipe.strMeasure9 !== '' && (
+           <p className={styles.recipe__ingredient}>{recipe.strMeasure9}</p>
           )}
          </div>
         </article>

@@ -25,7 +25,7 @@
 }
 
 .recipe__info p {
- color: var(--grey);
+ color: var(--text-color);
 }
 
 .recipe__tags {
@@ -70,7 +70,7 @@
 }
 
 .recipe__ingredient {
- border-bottom: 2px solid var(--grey-300);
+ border-bottom: 2px solid var(--text-color);
  padding-bottom: 0.75rem;
  color: var(--grey-700);
 }
