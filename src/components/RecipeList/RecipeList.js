@@ -8,20 +8,20 @@ function RecipeList({ recipes }) {
   <>
    <div className={styles.row}>
     {recipes.map((recipe) => (
-     <Link href={`/recipes/${recipe.idMeal}`} key={recipe.strMeal}>      
-       <div className={styles.card}>
-        <Image
-         src={recipe.strMealThumb + '/preview'}
-         alt={recipe.strMeal}
-         className={styles.img}
-         width='280px'
-         height='214px'
-         objectFit='cover'
-        />
-        <div className={styles.name}>{recipe.strMeal}</div>        
-        <button className={styles.button}>details</button>
-       </div>
-         </Link>
+     <Link href={`/recipes/${recipe.idMeal}`} key={recipe.strMeal} passHref>
+      <div className={styles.card}>
+       <Image
+        src={recipe.strMealThumb + '/preview'}
+        alt={recipe.strMeal}
+        className={styles.img}
+        width='280px'
+        height='214px'
+        objectFit='cover'
+       />
+       <div className={styles.name}>{recipe.strMeal}</div>
+       <button className={styles.button}>details</button>
+      </div>
+     </Link>
     ))}
    </div>
   </>
