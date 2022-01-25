@@ -1,4 +1,4 @@
-<img src='/public/screenshot.png'/>
+<img src='/public/fullpage.png'/>
 <br>
 <br>
 <br>
@@ -8,3 +8,5 @@
 Fetch Recipes <br>
 
 Search for Recipes <br>
+
+View Recipe
