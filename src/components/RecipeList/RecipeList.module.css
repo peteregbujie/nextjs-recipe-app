@@ -64,8 +64,8 @@
 
 .button:focus,
 .button:hover {
- background-color: var(--color);
- color: var(--white);
+ background-color: var(--yellow);
+ color: var(--text-color);
 }
 
 .rows .card:first-child,

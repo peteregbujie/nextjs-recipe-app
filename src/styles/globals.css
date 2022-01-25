@@ -5,6 +5,7 @@
  --text-color: #176102;
  --color-secondary: #138808;
  --grey: #d3d3d3;
+ --yellow: #ffda00;
 
  --background-color: #d0f0c0;
  --background-color-secondary: #98ff98;
@@ -49,7 +50,7 @@ h5 {
  margin: 0;
  margin-bottom: 1.38rem;
  font-family: var(--headingFont);
- font-weight: 400;
+ font-weight: bold;
  line-height: 1.3;
  text-transform: capitalize;
  letter-spacing: var(--letterSpacing);
