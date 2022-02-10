@@ -19,7 +19,7 @@ function RecipeList({ recipes }) {
         objectFit='cover'
        />
        <div className={styles.name}>{recipe.strMeal}</div>
-       <button className={styles.button}>details</button>
+       <button className={styles.button}>View Recipe</button>
       </div>
      </Link>
     ))}
