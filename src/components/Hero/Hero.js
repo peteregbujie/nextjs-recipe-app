@@ -15,18 +15,19 @@ const Hero = ({ updateRecipe }) => {
 };
   
  return (
- <form onSubmit={handleSubmit} className={styles.hero}>
-<div className={styles.hero__input}>
-        <FaSearch size={30}/>
-        <input 
-          type="text" 
-          value={recipe}
-          placeholder= "Search for Recipes"
-          onChange={handleChnage}
-        />
-      <button type="submit">search</button>
-     </div>
-    </form>
+  <form onSubmit={handleSubmit} className={styles.hero}>
+   <div className={styles.hero__text}>Find Your favorite Recipes</div>
+   <div className={styles.hero__input}>
+    <FaSearch size={30} />
+    <input
+     type='text'
+     value={recipe}
+     placeholder='Search for Recipes'
+     onChange={handleChnage}
+    />
+    <button type='submit'>search</button>
+   </div>
+  </form>
  );
 };
 
