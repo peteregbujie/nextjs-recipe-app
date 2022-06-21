@@ -21,21 +21,18 @@
  align-items: center;
 }
 
-.navbar__item {
- margin-left: 2rem;
- list-style: none;
-}
-
 .navbar__hamburger {
  display: none;
 }
 
 @media screen and (max-width: 768px) {
  .navbar__menu {
-  position: fixed;
-  left: -100%;
-  top: 5rem;
+  position: absolute;
+  display: flex;
   flex-direction: column;
+  width: 100%;
+  top: -100vh;
+  left: 0;
   background-color: var(--color-secondary);
   border-radius: 10px;
   width: 100%;
@@ -46,11 +43,6 @@
 
  .navbar__menu.active {
   left: 0;
- }
-
- .navbar__item {
-  margin: 2.5rem 0;
-  font-size: 1.2rem;
  }
 
  .navbar__hamburger {

@@ -33,11 +33,11 @@
  color: var(--text-color);
  font-weight: bold;
  font-size: 1rem;
- padding: 0.8rem 3rem;
+ padding: 0.8rem 1rem;
  margin: 0.2rem;
 }
 
-.hero__input input[type='text'] {
+.hero__input input[type="text"] {
  width: 100%;
  padding: 1rem;
  padding-left: 3rem;
@@ -69,5 +69,9 @@
   left: 10%;
   color: var(--white);
   align-items: center;
+ }
+
+ .hero__input button {
+  padding: 0.8rem 0.5rem;
  }
 }
